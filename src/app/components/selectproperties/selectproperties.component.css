@@ -1,0 +1,69 @@
+.all{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.left{
+    width: 35%;
+    height: 100%;
+    background-color: #8db600;
+}
+.right{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.table{
+    padding: 5%;
+}
+.title{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    color:  #4a4a4a;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+table {
+    background-color: #255000;
+    width: 100%;
+    margin-top: 2.5%;
+}
+th{
+    font-size: 15px;
+    font-weight: bold;
+}
+th, td{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+td{
+    font-weight: lighter;
+
+}
+.click{
+    cursor: pointer;
+}
+.mat-row:hover .mat-cell {
+    background-color: #8db600;
+    color: #255000;
+    font-weight: bold;
+}
+.search {
+    width: 100%;
+    text-transform: uppercase;
+}
+.option{
+    display: flex;
+    flex-direction: row;
+}
+.option h2{
+    padding: 10px;
+    padding-right: 50px;
+    font-weight: bolder;
+    color: #4a4a4a;
+}
+mat-label{
+    text-transform: capitalize;
+}

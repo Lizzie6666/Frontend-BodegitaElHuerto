@@ -1,0 +1,30 @@
+body{
+    height: 100%;
+}
+.all{
+    width: 100% - 35px;
+    padding-left: 35px;
+    padding-top: 75px;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: bold; 
+    color: #4a4a4a;
+    font-size: 25px;
+    padding-bottom: 35px;
+}
+.form{
+    width: 80%;
+    padding-bottom: 25px;
+}
+form, mat-form-field{
+    padding-right: 25px;
+    width: 65%;
+    font-size: 20px;
+}
+button{
+    background-color: #8db600;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+}

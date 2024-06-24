@@ -1,0 +1,95 @@
+.all {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.left {
+    width: 25%;
+    height: auto;
+    background-color: #8db600;
+}
+
+.right {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    color: #4a4a4a;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.table {
+    padding: 0% 5% 1% 5%;
+}
+
+table {
+    background-color: #255000;
+    width: 100%;
+    margin-top: 2.5%;
+}
+
+th {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+th,
+td {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+td {
+    font-weight: lighter;
+
+}
+
+mat-paginator {
+    background-color: #255000;
+    width: 100%;
+    font-size: 15px;
+    font-weight: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.params {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 50px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+.div {
+    margin-right: 10%;
+}
+
+.p {
+    vertical-align: middle;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+button {
+    background-color: #8db600;
+    color: #ffffff;
+    margin-left: 10px;
+}

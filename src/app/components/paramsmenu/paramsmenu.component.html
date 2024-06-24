@@ -1,0 +1,68 @@
+<body>
+    <div class="all">
+        <div class="left">
+            <app-navbar [id]="iduser" [mode]="2"></app-navbar>
+        </div>
+        <div class="right">
+            <div class="title">Configuración de parámetros</div>
+            <div class="form">
+
+                <div class="Amount">
+                    <mat-hint>Monto</mat-hint>
+                    <h2 style="font-weight: light; color: #4a4a4a;">{{property.pricedollar}}&#36;</h2>
+                </div>
+
+                <form [formGroup]="myForm" autocomplete="off">
+
+                    <div class="display">
+                        <mat-form-field class="config">
+                            <mat-label>Frecuencia</mat-label>
+                            <mat-select formControlName="frec">
+                                <mat-option *ngFor="let frec of frecuency" [value]="frec">{{frec}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Periodo de gracia {{configquot.periodgracia}}</mat-label>
+                        <input matInput formControlName="gracia" placeholder="Gracia">
+                    </mat-form-field> <br>
+
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Plazo (Años)</mat-label>
+                        <input matInput formControlName="period" placeholder="Periodo">
+                    </mat-form-field> <br>
+
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Tasa (Anual)</mat-label>
+                        <input matInput formControlName="tax" placeholder="Tasa">
+                    </mat-form-field> <br>
+
+                    <mat-form-field appearance="legacy">
+                        <mat-label val>Tasa de Desgravamen</mat-label>
+                        <input matInput formControlName="taxDeg" placeholder="Tasa de desgravamen anual">
+                    </mat-form-field> <br>
+
+                    <div class="initial">
+                        <mat-form-field appearance="legacy" *ngIf="inicial == true">
+                            <mat-label>Cuota Inicial (%)</mat-label>
+                            <input matInput formControlName="fee" placeholder="Cuota Inicial">
+                        </mat-form-field> <br>
+                        <mat-checkbox class="check" color="primary" (change)="checkInicial($event)">Cuota
+                            Inicial</mat-checkbox>
+                    </div>
+                </form>
+
+                <div class="aster" style="margin-top: 25px;">
+                    <mat-hint>*La tasa que debe ingresar debe ser tasa {{configquot.tasa}}.</mat-hint><br>
+                    <mat-hint>*La tasa tiene una capitalizacion {{configquot.capitalizacion}}.</mat-hint><br>
+                </div>
+                <div class="action">
+                    <button mat-raised-button (click)="continue()"> Continuar </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,975 @@
+{
+  "Caps": [
+    {
+      "dias": 1,
+      "cap": "Diario"
+    },
+    {
+      "dias": 15,
+      "cap": "Quincenal"
+    },
+    {
+      "dias": 30,
+      "cap": "Mensual"
+    },
+    {
+      "dias": 60,
+      "cap": "Bimestral"
+    },
+    {
+      "dias": 90,
+      "cap": "Trimestral"
+    },
+    {
+      "dias": 120,
+      "cap": "Cuatrimestral"
+    },
+    {
+      "dias": 180,
+      "cap": "Semestral"
+    },
+    {
+      "dias": 360,
+      "cap": "Anual"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "email": "Juan@gmail.com",
+      "password": "12345",
+      "name": "Juan",
+      "lastname": "Lopez",
+      "phone": "123456789",
+      "dni": "75839212",
+      "address": "Polo norte"
+    },
+    {
+      "id": 2,
+      "email": "Maria@gmail.com",
+      "password": "12345",
+      "name": "Maria",
+      "lastname": "Maria",
+      "phone": "adad",
+      "dni": "adad",
+      "address": "adda"
+    },
+    {
+      "id": 3,
+      "email": "adad",
+      "password": "adad",
+      "name": "adad",
+      "lastname": "adad",
+      "phone": "adad",
+      "dni": "adad",
+      "address": "adda"
+    },
+    {
+      "id": 4,
+      "email": "cokijlmf@gmail.com",
+      "password": "123456",
+      "name": "Jorge",
+      "lastname": "Mercado",
+      "phone": "998464987",
+      "dni": "12259999",
+      "address": "Av. Primavera 2034"
+    },
+    {
+      "id": 5,
+      "email": "alonso@gmail.com",
+      "password": "12345",
+      "name": "Pedro ",
+      "lastname": "Albujar",
+      "phone": "999333222",
+      "dni": "74244023",
+      "address": "Av. Palmares"
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "name": "Polo",
+      "district": "Sur",
+      "address": "Polo Sur",
+      "size": "320 m2",
+      "rooms": 4,
+      "pricedollar": 53000
+    },
+    {
+      "id": 2,
+      "name": "Los pinos",
+      "district": "Sur",
+      "address": "Primavera av.",
+      "size": "450 m2",
+      "rooms": 5,
+      "pricedollar": 100000
+    },
+    {
+      "id": 3,
+      "name": "Los pinos",
+      "district": "Surco",
+      "address": "Primavera av.",
+      "size": "450 m2",
+      "rooms": 5,
+      "pricedollar": 100000
+    },
+    {
+      "id": 4,
+      "name": "Miraflores",
+      "district": "Miraflores",
+      "address": "Malecón",
+      "size": "250 m2",
+      "rooms": 3,
+      "pricedollar": 80000
+    },
+    {
+      "id": 5,
+      "name": "San Isidro",
+      "district": "San Isidro",
+      "address": "Avenida Principal",
+      "size": "400 m2",
+      "rooms": 4,
+      "pricedollar": 120000
+    },
+    {
+      "id": 6,
+      "name": "La Molina",
+      "district": "La Molina",
+      "address": "Calle Los Álamos",
+      "size": "300 m2",
+      "rooms": 4,
+      "pricedollar": 95000
+    },
+    {
+      "id": 7,
+      "name": "Santa Anita",
+      "district": "Santa Anita",
+      "address": "Calle Los Pinos",
+      "size": "350 m2",
+      "rooms": 3,
+      "pricedollar": 65000
+    },
+    {
+      "id": 8,
+      "name": "Barranco",
+      "district": "Barranco",
+      "address": "Calle de los Artistas",
+      "size": "280 m2",
+      "rooms": 3,
+      "pricedollar": 90000
+    },
+    {
+      "id": 9,
+      "name": "Chorrillos",
+      "district": "Chorrillos",
+      "address": "Calle Los Pescadores",
+      "size": "320 m2",
+      "rooms": 4,
+      "pricedollar": 75000
+    },
+    {
+      "id": 10,
+      "name": "Surco",
+      "district": "Surco",
+      "address": "Avenida Principal",
+      "size": "380 m2",
+      "rooms": 5,
+      "pricedollar": 110000
+    },
+    {
+      "id": 11,
+      "name": "Jesús María",
+      "district": "Jesús María",
+      "address": "Calle Los Ángeles",
+      "size": "280 m2",
+      "rooms": 3,
+      "pricedollar": 85000
+    },
+    {
+      "id": 12,
+      "name": "San Borja",
+      "district": "San Borja",
+      "address": "Calle Las Flores",
+      "size": "300 m2",
+      "rooms": 4,
+      "pricedollar": 90000
+    },
+    {
+      "id": 13,
+      "name": "Magdalena",
+      "district": "Magdalena",
+      "address": "Calle Los Pájaros",
+      "size": "340 m2",
+      "rooms": 4,
+      "pricedollar": 78000
+    },
+    {
+      "id": 14,
+      "name": "Callao",
+      "district": "Callao",
+      "address": "Malecón",
+      "size": "280 m2",
+      "rooms": 3,
+      "pricedollar": 70000
+    },
+    {
+      "id": 15,
+      "name": "La Victoria",
+      "district": "La Victoria",
+      "address": "Avenida Principal",
+      "size": "380 m2",
+      "rooms": 4,
+      "pricedollar": 80000
+    },
+    {
+      "id": 16,
+      "name": "Cercado de Lima",
+      "district": "Cercado de Lima",
+      "address": "Calle Principal",
+      "size": "250 m2",
+      "rooms": 3,
+      "pricedollar": 60000
+    },
+    {
+      "id": 17,
+      "name": "San Juan de Miraflores",
+      "district": "San Juan de Miraflores",
+      "address": "Calle Los Girasoles",
+      "size": "320 m2",
+      "rooms": 4,
+      "pricedollar": 72000
+    },
+    {
+      "id": 18,
+      "name": "Breña",
+      "district": "Breña",
+      "address": "Avenida Principal",
+      "size": "300 m2",
+      "rooms": 4,
+      "pricedollar": 85000
+    },
+    {
+      "id": 19,
+      "name": "Surquillo",
+      "district": "Surquillo",
+      "address": "Calle Los Cerezos",
+      "size": "280 m2",
+      "rooms": 3,
+      "pricedollar": 78000
+    },
+    {
+      "id": 20,
+      "name": "Villa El Salvador",
+      "district": "Villa El Salvador",
+      "address": "Avenida Principal",
+      "size": "380 m2",
+      "rooms": 5,
+      "pricedollar": 90000
+    }
+  ],
+  "configfavs": [
+    {
+      "id": 1,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 2,
+      "idclient": 2,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 3,
+      "idclient": 3,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 4,
+      "idclient": 4,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    }
+  ],
+  "configquots": [
+    {
+      "id": 1,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 2,
+      "idclient": 2,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 3,
+      "idclient": 2,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 4,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 5,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Trimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 6,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 7,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 8,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 9,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 10,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 11,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 12,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Trimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 13,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 14,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 15,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": {
+        "dias": 30,
+        "cap": "Mensual"
+      },
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 16,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": {
+        "dias": 30,
+        "cap": "Mensual"
+      },
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 17,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": {
+        "dias": 30,
+        "cap": "Mensual"
+      },
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 18,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": {
+        "dias": 30,
+        "cap": "Mensual"
+      },
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 19,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": {
+        "dias": 30,
+        "cap": "Mensual"
+      },
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 20,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": {
+        "dias": 30,
+        "cap": "Mensual"
+      },
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 21,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": {
+        "dias": 30,
+        "cap": "Mensual"
+      },
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 22,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": {
+        "dias": 15,
+        "cap": "Quincenal"
+      },
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 23,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Quincenal",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 24,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Quincenal",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 25,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 26,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 27,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 28,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Trimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 29,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Cuatrimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 30,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 31,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Quincenal",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 32,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 33,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 34,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 35,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 36,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 37,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 38,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 39,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 40,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 41,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Quincenal",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 42,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 43,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 44,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 45,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 46,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 47,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 48,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 49,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 50,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 51,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 52,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 53,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 54,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 55,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 56,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 57,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 58,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 59,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 60,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 61,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 62,
+      "idclient": 4,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 63,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "-------",
+      "moneda": "dolares"
+    },
+    {
+      "id": 64,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 65,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 66,
+      "idclient": 5,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 67,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Trimestral",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 68,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Quincenal",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    },
+    {
+      "id": 69,
+      "idclient": 1,
+      "tasa": "nominal",
+      "capitalizacion": "Quincenal",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 70,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Total",
+      "moneda": "dolares"
+    },
+    {
+      "id": 71,
+      "idclient": 1,
+      "tasa": "efectiva",
+      "capitalizacion": "",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
+    }
+  ],
+  "quotations": [
+    {
+      "id": 1,
+      "idclient": 1,
+      "idconfigquot": 67,
+      "amount": 80000,
+      "idprop": 15,
+      "period": "5",
+      "tax": "13",
+      "fee": "4",
+      "initial": true,
+      "final": true,
+      "gracia": "3",
+      "frecuency": "Mensual",
+      "taxdeg": "13"
+    },
+    {
+      "id": 2,
+      "idclient": 1,
+      "idconfigquot": 68,
+      "amount": 100000,
+      "idprop": 2,
+      "period": "5",
+      "tax": "10",
+      "fee": "5",
+      "initial": true,
+      "final": true,
+      "gracia": "10",
+      "frecuency": "Bimestral",
+      "taxdeg": "3"
+    },
+    {
+      "id": 3,
+      "idclient": 1,
+      "idconfigquot": 69,
+      "amount": 75000,
+      "idprop": 9,
+      "period": "10",
+      "tax": "5",
+      "fee": "100",
+      "initial": true,
+      "final": false,
+      "gracia": "3",
+      "frecuency": "Bimestral",
+      "taxdeg": "3"
+    },
+    {
+      "id": 4,
+      "idclient": 1,
+      "idconfigquot": 70,
+      "amount": 100000,
+      "idprop": 2,
+      "period": "4",
+      "tax": "9",
+      "fee": "",
+      "initial": false,
+      "final": false,
+      "gracia": "0",
+      "frecuency": "Semestral",
+      "taxdeg": "0.5407"
+    },
+    {
+      "id": 5,
+      "idclient": 1,
+      "idconfigquot": 71,
+      "amount": 100000,
+      "idprop": 2,
+      "period": "4",
+      "tax": "9",
+      "fee": "",
+      "initial": false,
+      "final": true,
+      "gracia": "2",
+      "frecuency": "Semestral",
+      "taxdeg": "0.5407"
+    }
+  ]
+}

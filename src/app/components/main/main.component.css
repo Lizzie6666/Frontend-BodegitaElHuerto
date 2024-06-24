@@ -1,0 +1,102 @@
+.all{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.left{
+    width: 35%;
+    height: 100%;
+    background-color: #8db600;
+}
+.welcome{
+    height: 50%;
+}
+.welcome h1{
+    padding: 10% 5% 5% 10%;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+.actions{
+    height: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.actions button{
+    background-color: #ffffff;
+    color: #255000;
+    margin-bottom: 10%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.right{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.top{
+    height: 70%;
+    color: #4a4a4a;
+}
+.top .title{
+    padding-top: 35px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    color: #4a4a4a;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+.top .subtitle{
+    font-weight: lighter;
+    font-size: 20px;
+    padding-left: 50px;
+}
+.bottom{
+    height: 30%;
+    padding-left: 50px;
+}
+.bottom button{
+    margin: 45px;
+    margin-left: 0px;
+    background-color: #8db600;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 35px;
+    padding-top: 2.5px;
+    padding-right: 35px;
+    padding-bottom: 2.5px;
+}
+.table{
+    padding: 0 5% 5% 5%;
+}
+table{
+    background-color: #255000;
+    width: 100%;
+    margin-top: 2.5%;
+}
+th{
+    font-size: 15px;
+    font-weight: bold;
+}
+th, td{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+td{
+    font-weight: lighter;
+
+}
+.mat-row:hover .mat-cell {
+    background-color: #8db600;
+    color: #255000;
+    font-weight: bold;
+}
+.click{
+    cursor: pointer;
+}

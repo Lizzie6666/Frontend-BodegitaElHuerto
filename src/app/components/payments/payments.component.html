@@ -1,0 +1,91 @@
+<body>
+    <div class="all">
+        <div class="left">
+            <app-navbar [id]='iduser' [mode]='2'></app-navbar>
+        </div>
+        <div class="right">
+            <div class="title"> PLAN DE PAGOS </div>
+            <section class="params">
+                <div class="div">
+                    <p>Monto: {{myquot.amount}} dólares </p>
+                    <p>Tasa: {{tasashow | number:'1.2-2'}}% </p>
+                    <p>Tasa de seguro de desgravamen: {{tasaDegshow | number:'1.2-2'}}% </p>
+                    <p>Periodos: {{myquot.period}} Años</p>
+                </div>
+                <div class="div">
+                    <p>Frencuencia: {{this.myquot.frecuency}}</p>
+                    <p>Cuota Inicial: {{this.initialfee}}</p>
+                    <p>Monto total a pagar: {{this.inmonto}}</p>
+                </div>
+            </section>
+            <div class="table">
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                    <ng-container matColumnDef="periodo">
+                        <th mat-header-cell *matHeaderCellDef> Periodo </th>
+                        <td mat-cell *matCellDef="let element"> {{element.periodo}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="gracia">
+                        <th mat-header-cell *matHeaderCellDef> Per. gracia </th>
+                        <td mat-cell *matCellDef="let element"> {{element.gracia}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="cuota">
+                        <th mat-header-cell *matHeaderCellDef> Cuota </th>
+                        <td mat-cell *matCellDef="let element"> {{element.cuota | number:'1.2-2'}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="monto_seguro">
+                        <th mat-header-cell *matHeaderCellDef> Monto Seguro Deg.</th>
+                        <td mat-cell *matCellDef="let element"> {{element.monto_seguro | number:'1.2-2'}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="amortizacion">
+                        <th mat-header-cell *matHeaderCellDef> Amortizacion </th>
+                        <td mat-cell *matCellDef="let element"> {{element.amortizacion | number:'1.2-2'}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="interes">
+                        <th mat-header-cell *matHeaderCellDef> Intereses </th>
+                        <td mat-cell *matCellDef="let element"> {{element.interes | number:'1.2-2'}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="saldo">
+                        <th mat-header-cell *matHeaderCellDef> Saldo </th>
+                        <td mat-cell *matCellDef="let element"> {{element.saldo | number:'1.2-2'}} </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+                <mat-paginator [pageSizeOptions]="[5]"></mat-paginator>
+            </div>
+
+            <div class="actions">
+                <button mat-raised-button (click)="save()"
+                    *ngIf="myquot.final == false || myquot.final == undefined; else noshow">Guardar y Finalizar</button>
+                <ng-template #noshow>
+                    <button mat-raised-button (click)="back()">Finalizar</button>
+                </ng-template>
+            </div>
+
+            <div class="actions">
+                <form (ngSubmit)="calculate_VAN()" #formulario="ngForm">
+                    <mat-form-field>
+                        <input matInput type="number" name="COK" [(ngModel)]="COK"
+                            placeholder="Ingrese el valor de la COK" required>
+                    </mat-form-field>
+                    <button mat-raised-button type="submit">Calcular VAN</button>
+                </form>
+            </div>
+
+            <div class="actions">
+                <p *ngIf="VAN">El valor de la VAN con una COK de {{ COK }}% es: {{ VAN | number:'1.2-2'}}
+                    &lpar;Sugerencia:
+                    {{sug}}&#41;</p>
+            </div>
+
+        </div>
+    </div>
+</body>

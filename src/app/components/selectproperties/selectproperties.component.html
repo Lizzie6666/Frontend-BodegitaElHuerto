@@ -1,0 +1,59 @@
+<body>
+    <div class="all">
+        <div class="left">
+            <app-navbar [id] = "iduser" [mode] = "2"></app-navbar>
+        </div>
+        <div class="right">
+            <div class="title">Selección de Inmuebles</div>
+            
+            <div class="table">
+                <div class="search">
+                    <div class="option">
+                        <h2>Distrito</h2>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Distrito</mat-label>
+                            <mat-select [(ngModel)]="selectedValue" name="district" (selectionChange)="test()">
+                              <mat-option>Todos</mat-option>
+                              <mat-option *ngFor="let district of districts" [value]="district">{{district}}
+                              </mat-option>
+                            </mat-select>
+                          </mat-form-field>
+                    </div>
+                    
+                </div>
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" class="click">
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef> Name </th>
+                        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="district">
+                        <th mat-header-cell *matHeaderCellDef> District </th>
+                        <td mat-cell *matCellDef="let element"> {{element.district}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="address">
+                        <th mat-header-cell *matHeaderCellDef> Address </th>
+                        <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="size">
+                        <th mat-header-cell *matHeaderCellDef> Size </th>
+                        <td mat-cell *matCellDef="let element"> {{element.size}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="rooms">
+                        <th mat-header-cell *matHeaderCellDef> Rooms </th>
+                        <td mat-cell *matCellDef="let element"> {{element.rooms}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="pricedollar">
+                        <th mat-header-cell *matHeaderCellDef> Price </th>
+                        <td mat-cell *matCellDef="let element"> {{element.pricedollar}}&#36; </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="click" (click)="table(row)"></tr>
+                  
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+

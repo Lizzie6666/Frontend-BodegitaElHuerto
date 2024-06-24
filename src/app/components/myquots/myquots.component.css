@@ -1,0 +1,60 @@
+.all{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.left{
+    width: 35%;
+    height: 100%;
+    background-color: #8db600;
+}
+.right{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.title{
+    padding-top: 35px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    color: #4a4a4a;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+.table{
+    padding: 0 5% 5% 5%;
+}
+table{
+    background-color: #255000;
+    width: 100%;
+    margin-top: 2.5%;
+}
+th{
+    font-size: 15px;
+    font-weight: bold;
+}
+th, td{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+td{
+    font-weight: lighter;
+
+}
+.mat-row:hover .mat-cell {
+    background-color: #8db600;
+    color: #255000;
+    font-weight: bold;
+}
+.click{
+    cursor: pointer;
+}
+mat-paginator{
+    background-color: #255000;
+    width: 100%;
+    font-size: 15px;
+    font-weight: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+}
