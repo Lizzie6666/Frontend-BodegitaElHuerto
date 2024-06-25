@@ -20,6 +20,8 @@ import { SelectpropertiesComponent } from './components/selectproperties/selectp
 import { PaymentsComponent } from './components/payments/payments.component';
 import { MyquotsComponent } from './components/myquots/myquots.component';
 import { MyaccountComponent } from './components/myaccount/myaccount.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { CommonModule, NgClass, NgFor } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { MyaccountComponent } from './components/myaccount/myaccount.component';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

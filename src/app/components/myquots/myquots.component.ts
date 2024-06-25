@@ -17,6 +17,10 @@ import { PropertyService } from 'src/app/services/property.service';
 export class MyquotsComponent implements OnInit {
 
   id!: number;
+  totalAmount: number = 0;
+  maxLimit: number = 500000;
+  progressValue: number = 0;
+
 
   dataSource = new MatTableDataSource<Quotation>();
   displayedColumns: string[] = ["name", "period", "tax", "amount"];
@@ -60,11 +64,21 @@ export class MyquotsComponent implements OnInit {
       next:(data:Quotation[])=>{
         this.completequots = data;
         this.join();
-
+        this.calculateTotalAmount();
         this.dataSource = new MatTableDataSource(this.completequots);
         this.dataSource.paginator = this.paginator;
       }
     })
+  }
+  calculateTotalAmount(): void {
+    this.totalAmount = this.completequots.reduce((sum, quot) => sum + quot.amount, 0);
+    this.calculateProgressValue();
+  }
+  calculateProgressValue(): void {
+    this.progressValue = (this.totalAmount / this.maxLimit) * 100;
+    if (this.progressValue > 100) {
+      this.progressValue = 100; 
+    }
   }
 
   props!: Property[];
