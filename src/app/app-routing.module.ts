@@ -26,8 +26,9 @@ const routes: Routes = [
   {path: "select-properties", component:SelectpropertiesComponent},
   {path: "payments-periods", component:PaymentsComponent},
   {path: "my-quotations", component:MyquotsComponent},
-  {path: "**", component:Page404Component},
-  {path:"debt",component:DebtComponent}
+  {path:"debt",component:DebtComponent},
+  {path: "**", component:Page404Component}
+
 ];
 
 @NgModule({

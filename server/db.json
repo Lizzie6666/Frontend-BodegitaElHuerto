@@ -2,40 +2,48 @@
   "Caps": [
     {
       "dias": 1,
-      "cap": "Diario"
+      "cap": "Diario",
+      "id": "7f8c"
     },
     {
       "dias": 15,
-      "cap": "Quincenal"
+      "cap": "Quincenal",
+      "id": "5fa0"
     },
     {
       "dias": 30,
-      "cap": "Mensual"
+      "cap": "Mensual",
+      "id": "d697"
     },
     {
       "dias": 60,
-      "cap": "Bimestral"
+      "cap": "Bimestral",
+      "id": "1f22"
     },
     {
       "dias": 90,
-      "cap": "Trimestral"
+      "cap": "Trimestral",
+      "id": "fa86"
     },
     {
       "dias": 120,
-      "cap": "Cuatrimestral"
+      "cap": "Cuatrimestral",
+      "id": "df4e"
     },
     {
       "dias": 180,
-      "cap": "Semestral"
+      "cap": "Semestral",
+      "id": "15d1"
     },
     {
       "dias": 360,
-      "cap": "Anual"
+      "cap": "Anual",
+      "id": "cd9c"
     }
   ],
   "clients": [
     {
-      "id": 1,
+      "id": "1",
       "email": "Juan@gmail.com",
       "password": "12345",
       "name": "Juan",
@@ -45,7 +53,7 @@
       "address": "Polo norte"
     },
     {
-      "id": 2,
+      "id": "2",
       "email": "Maria@gmail.com",
       "password": "12345",
       "name": "Maria",
@@ -55,7 +63,7 @@
       "address": "adda"
     },
     {
-      "id": 3,
+      "id": "3",
       "email": "adad",
       "password": "adad",
       "name": "adad",
@@ -65,7 +73,7 @@
       "address": "adda"
     },
     {
-      "id": 4,
+      "id": "4",
       "email": "cokijlmf@gmail.com",
       "password": "123456",
       "name": "Jorge",
@@ -75,7 +83,7 @@
       "address": "Av. Primavera 2034"
     },
     {
-      "id": 5,
+      "id": "5",
       "email": "alonso@gmail.com",
       "password": "12345",
       "name": "Pedro ",
@@ -83,11 +91,22 @@
       "phone": "999333222",
       "dni": "74244023",
       "address": "Av. Palmares"
+    },
+    {
+      "id": "6",
+      "email": "lizzie@gmail.com",
+      "password": "222222",
+      "name": "Lizzie",
+      "lastname": "Hernan",
+      "phone": "963852741",
+      "dni": "75348962",
+      "address": "Avenida Aviación",
+      "date": "30"
     }
   ],
   "properties": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Polo",
       "district": "Sur",
       "address": "Polo Sur",
@@ -96,7 +115,7 @@
       "pricedollar": 53000
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Los pinos",
       "district": "Sur",
       "address": "Primavera av.",
@@ -105,7 +124,7 @@
       "pricedollar": 100000
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Los pinos",
       "district": "Surco",
       "address": "Primavera av.",
@@ -114,7 +133,7 @@
       "pricedollar": 100000
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Miraflores",
       "district": "Miraflores",
       "address": "Malecón",
@@ -123,7 +142,7 @@
       "pricedollar": 80000
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "San Isidro",
       "district": "San Isidro",
       "address": "Avenida Principal",
@@ -132,7 +151,7 @@
       "pricedollar": 120000
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "La Molina",
       "district": "La Molina",
       "address": "Calle Los Álamos",
@@ -141,7 +160,7 @@
       "pricedollar": 95000
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Santa Anita",
       "district": "Santa Anita",
       "address": "Calle Los Pinos",
@@ -150,7 +169,7 @@
       "pricedollar": 65000
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Barranco",
       "district": "Barranco",
       "address": "Calle de los Artistas",
@@ -159,7 +178,7 @@
       "pricedollar": 90000
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Chorrillos",
       "district": "Chorrillos",
       "address": "Calle Los Pescadores",
@@ -168,7 +187,7 @@
       "pricedollar": 75000
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Surco",
       "district": "Surco",
       "address": "Avenida Principal",
@@ -177,7 +196,7 @@
       "pricedollar": 110000
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Jesús María",
       "district": "Jesús María",
       "address": "Calle Los Ángeles",
@@ -186,7 +205,7 @@
       "pricedollar": 85000
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "San Borja",
       "district": "San Borja",
       "address": "Calle Las Flores",
@@ -195,7 +214,7 @@
       "pricedollar": 90000
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Magdalena",
       "district": "Magdalena",
       "address": "Calle Los Pájaros",
@@ -204,7 +223,7 @@
       "pricedollar": 78000
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Callao",
       "district": "Callao",
       "address": "Malecón",
@@ -213,7 +232,7 @@
       "pricedollar": 70000
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "La Victoria",
       "district": "La Victoria",
       "address": "Avenida Principal",
@@ -222,7 +241,7 @@
       "pricedollar": 80000
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Cercado de Lima",
       "district": "Cercado de Lima",
       "address": "Calle Principal",
@@ -231,7 +250,7 @@
       "pricedollar": 60000
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "San Juan de Miraflores",
       "district": "San Juan de Miraflores",
       "address": "Calle Los Girasoles",
@@ -240,7 +259,7 @@
       "pricedollar": 72000
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Breña",
       "district": "Breña",
       "address": "Avenida Principal",
@@ -249,7 +268,7 @@
       "pricedollar": 85000
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Surquillo",
       "district": "Surquillo",
       "address": "Calle Los Cerezos",
@@ -258,7 +277,7 @@
       "pricedollar": 78000
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Villa El Salvador",
       "district": "Villa El Salvador",
       "address": "Avenida Principal",
@@ -269,7 +288,7 @@
   ],
   "configfavs": [
     {
-      "id": 1,
+      "id": "1",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -277,7 +296,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 2,
+      "id": "2",
       "idclient": 2,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -285,7 +304,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 3,
+      "id": "3",
       "idclient": 3,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -293,7 +312,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 4,
+      "id": "4",
       "idclient": 4,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -303,7 +322,7 @@
   ],
   "configquots": [
     {
-      "id": 1,
+      "id": "1",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "Bimestral",
@@ -311,7 +330,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 2,
+      "id": "2",
       "idclient": 2,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -319,7 +338,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 3,
+      "id": "3",
       "idclient": 2,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -327,7 +346,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 4,
+      "id": "4",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "Bimestral",
@@ -335,7 +354,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 5,
+      "id": "5",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Trimestral",
@@ -343,7 +362,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 6,
+      "id": "6",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -351,7 +370,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 7,
+      "id": "7",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -359,7 +378,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 8,
+      "id": "8",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Mensual",
@@ -367,7 +386,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 9,
+      "id": "9",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -375,7 +394,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 10,
+      "id": "10",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -383,7 +402,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 11,
+      "id": "11",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -391,7 +410,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 12,
+      "id": "12",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Trimestral",
@@ -399,7 +418,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 13,
+      "id": "13",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Bimestral",
@@ -407,7 +426,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 14,
+      "id": "14",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -415,7 +434,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 15,
+      "id": "15",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": {
@@ -426,7 +445,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 16,
+      "id": "16",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": {
@@ -437,7 +456,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 17,
+      "id": "17",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": {
@@ -448,7 +467,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 18,
+      "id": "18",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": {
@@ -459,7 +478,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 19,
+      "id": "19",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": {
@@ -470,7 +489,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 20,
+      "id": "20",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": {
@@ -481,7 +500,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 21,
+      "id": "21",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": {
@@ -492,7 +511,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 22,
+      "id": "22",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": {
@@ -503,7 +522,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 23,
+      "id": "23",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Quincenal",
@@ -511,7 +530,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 24,
+      "id": "24",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Quincenal",
@@ -519,7 +538,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 25,
+      "id": "25",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Mensual",
@@ -527,7 +546,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 26,
+      "id": "26",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Mensual",
@@ -535,7 +554,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 27,
+      "id": "27",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Mensual",
@@ -543,7 +562,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 28,
+      "id": "28",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Trimestral",
@@ -551,7 +570,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 29,
+      "id": "29",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Cuatrimestral",
@@ -559,7 +578,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 30,
+      "id": "30",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Mensual",
@@ -567,7 +586,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 31,
+      "id": "31",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Quincenal",
@@ -575,7 +594,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 32,
+      "id": "32",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Mensual",
@@ -583,7 +602,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 33,
+      "id": "33",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -591,7 +610,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 34,
+      "id": "34",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Mensual",
@@ -599,7 +618,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 35,
+      "id": "35",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -607,7 +626,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 36,
+      "id": "36",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "Mensual",
@@ -615,7 +634,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 37,
+      "id": "37",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -623,7 +642,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 38,
+      "id": "38",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -631,7 +650,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 39,
+      "id": "39",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -639,7 +658,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 40,
+      "id": "40",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -647,7 +666,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 41,
+      "id": "41",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Quincenal",
@@ -655,7 +674,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 42,
+      "id": "42",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -663,7 +682,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 43,
+      "id": "43",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -671,7 +690,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 44,
+      "id": "44",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -679,7 +698,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 45,
+      "id": "45",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -687,7 +706,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 46,
+      "id": "46",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -695,7 +714,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 47,
+      "id": "47",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -703,7 +722,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 48,
+      "id": "48",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -711,7 +730,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 49,
+      "id": "49",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -719,7 +738,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 50,
+      "id": "50",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -727,7 +746,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 51,
+      "id": "51",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -735,7 +754,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 52,
+      "id": "52",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -743,7 +762,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 53,
+      "id": "53",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -751,7 +770,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 54,
+      "id": "54",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -759,7 +778,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 55,
+      "id": "55",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -767,7 +786,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 56,
+      "id": "56",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -775,7 +794,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 57,
+      "id": "57",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -783,7 +802,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 58,
+      "id": "58",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -791,7 +810,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 59,
+      "id": "59",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -799,7 +818,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 60,
+      "id": "60",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -807,7 +826,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 61,
+      "id": "61",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -815,7 +834,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 62,
+      "id": "62",
       "idclient": 4,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -823,7 +842,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 63,
+      "id": "63",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -831,7 +850,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 64,
+      "id": "64",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -839,7 +858,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 65,
+      "id": "65",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -847,7 +866,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 66,
+      "id": "66",
       "idclient": 5,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -855,7 +874,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 67,
+      "id": "67",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Trimestral",
@@ -863,7 +882,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 68,
+      "id": "68",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Quincenal",
@@ -871,7 +890,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 69,
+      "id": "69",
       "idclient": 1,
       "tasa": "nominal",
       "capitalizacion": "Quincenal",
@@ -879,7 +898,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 70,
+      "id": "70",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -887,7 +906,7 @@
       "moneda": "dolares"
     },
     {
-      "id": 71,
+      "id": "71",
       "idclient": 1,
       "tasa": "efectiva",
       "capitalizacion": "",
@@ -897,7 +916,7 @@
   ],
   "quotations": [
     {
-      "id": 1,
+      "id": "1",
       "idclient": 1,
       "idconfigquot": 67,
       "amount": 80000,
@@ -912,7 +931,7 @@
       "taxdeg": "13"
     },
     {
-      "id": 2,
+      "id": "2",
       "idclient": 1,
       "idconfigquot": 68,
       "amount": 100000,
@@ -927,7 +946,7 @@
       "taxdeg": "3"
     },
     {
-      "id": 3,
+      "id": "3",
       "idclient": 1,
       "idconfigquot": 69,
       "amount": 75000,
@@ -942,7 +961,7 @@
       "taxdeg": "3"
     },
     {
-      "id": 4,
+      "id": "4",
       "idclient": 1,
       "idconfigquot": 70,
       "amount": 100000,
@@ -957,7 +976,7 @@
       "taxdeg": "0.5407"
     },
     {
-      "id": 5,
+      "id": "5",
       "idclient": 1,
       "idconfigquot": 71,
       "amount": 100000,
