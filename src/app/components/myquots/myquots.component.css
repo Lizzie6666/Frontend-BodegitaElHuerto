@@ -58,3 +58,27 @@ mat-paginator{
     color: #ffffff;
     text-transform: uppercase;
 }
+
+.credit-limit {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-amount {
+  font-weight: bold; /* Negrita para la cifra */
+  padding: 5px 10px; /* Padding interior para dar espacio alrededor del texto */
+  background-color: #ffffff; /* Fondo blanco para destacar la cifra */
+  border: 2px solid #8db600; /* Borde verde oscuro para mantener coherencia con el diseño */
+  border-radius: 5px; /* Bordes redondeados para suavizar la apariencia */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra ligera para efecto de profundidad */
+}
+
+/* Ajusta el margen izquierdo del span para aumentar el espacio */
+div span {
+  margin-left: 5px; /* Ajusta este valor según tus necesidades */
+}
