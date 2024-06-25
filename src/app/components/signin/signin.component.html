@@ -3,12 +3,12 @@
     <div class="all">
         <div class="title">Registrar nuevo usuario</div>
         <div class="form">
-            <form [formGroup]="myForm" autocomplete="off">  
+            <form [formGroup]="myForm" autocomplete="off">
                 <mat-form-field appearance="legacy">
                     <mat-label>Email</mat-label>
                     <input matInput formControlName="email" placeholder="Email">
                 </mat-form-field> <br>
-            
+
                 <mat-form-field appearance="legacy">
                     <mat-label>Contraseña</mat-label>
                     <input matInput type="password" formControlName="password" placeholder="Contraseña">
@@ -17,7 +17,7 @@
                     <mat-label>Nombre</mat-label>
                     <input matInput formControlName="name" placeholder="Nombre">
                 </mat-form-field> <br>
-            
+
                 <mat-form-field appearance="legacy">
                     <mat-label>Apellidos</mat-label>
                     <input matInput formControlName="lastname" placeholder="Apellidos">
@@ -26,15 +26,21 @@
                     <mat-label>Teléfono</mat-label>
                     <input matInput formControlName="phone" placeholder="Teléfono">
                 </mat-form-field> <br>
-            
+
                 <mat-form-field appearance="legacy">
                     <mat-label>DNI</mat-label>
                     <input matInput formControlName="dni" placeholder="DNI">
                 </mat-form-field> <br>
-        
+
                 <mat-form-field appearance="legacy">
                     <mat-label>Direccion</mat-label>
-                    <input matInput formControlName="address" placeholder="direcion">
+                    <input matInput formControlName="address" placeholder="direccion">
+                </mat-form-field> <br>
+
+                <mat-form-field appearance="legacy">
+                  <mat-label>Fecha de Pago Mensual</mat-label>
+                  <input matInput formControlName="date" placeholder="Número entre 0 y 30">
+
                 </mat-form-field> <br>
             </form>
         </div>
