@@ -1,37 +1,19 @@
-import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import { Client } from 'src/app/models/Client';
-import { ClientService } from 'src/app/services/client.service';
 
 @Component({
   selector: 'app-debt',
   templateUrl: './debt.component.html',
   styleUrls: ['./debt.component.css']
 })
-export class DebtComponent { 
-  @Input() id?: number;
-  @Input() mode?: number;
-  constructor(private clientservice: ClientService,
-              private route: Router) { }
+export class DebtComponent implements OnInit { 
+  usernow?: Client;
 
   ngOnInit(): void {
-    this.loadUser();
-    console.log(this.usernow.name);
-  }
-
-  usernow!:Client;
-  loadUser()
-  {
-    if(this.id!= undefined && this.id!= 0)
-    {
-      this.clientservice.getClientByID(this.id).subscribe(
-        (data:Client)=>{
-          this.usernow = data;
-        }
-      );
+    // Recuperar información del usuario desde localStorage
+    const usernowStr = localStorage.getItem('usernow');
+    if (usernowStr) {
+      this.usernow = JSON.parse(usernowStr);
     }
   }
-
-
-
 }

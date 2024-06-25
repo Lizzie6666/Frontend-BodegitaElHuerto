@@ -16,6 +16,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.debt-container {
+    background-color: #ff0000; /* Color rojo */
+}
+
 .welcome-section {
     margin-bottom: 20px;
 }
@@ -45,6 +49,10 @@ body {
     color: #6BBE44;
     font-size: 24px;
     margin: 0;
+}
+
+.debt-container .message h2, .debt-container .message p {
+    color: #ff0000; /* Color rojo */
 }
 
 .message p {
