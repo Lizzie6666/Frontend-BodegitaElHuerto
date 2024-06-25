@@ -12,6 +12,7 @@ import { SelectpropertiesComponent } from './components/selectproperties/selectp
 import { PaymentsComponent } from './components/payments/payments.component';
 import { MyquotsComponent } from './components/myquots/myquots.component';
 import { MyaccountComponent } from './components/myaccount/myaccount.component';
+import { DebtComponent } from './components/debt/debt.component';
 
 const routes: Routes = [
   {path: "", component:EmptyhomeComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: "select-properties", component:SelectpropertiesComponent},
   {path: "payments-periods", component:PaymentsComponent},
   {path: "my-quotations", component:MyquotsComponent},
-  {path: "**", component:Page404Component}
+  {path: "**", component:Page404Component},
+  {path:"debt",component:DebtComponent}
 ];
 
 @NgModule({

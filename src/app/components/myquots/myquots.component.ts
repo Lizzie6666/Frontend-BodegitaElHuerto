@@ -15,11 +15,11 @@ import { PropertyService } from 'src/app/services/property.service';
   styleUrls: ['./myquots.component.css']
 })
 export class MyquotsComponent implements OnInit {
-
+  userSelectedDay: number = 15;
   id!: number;
 
   dataSource = new MatTableDataSource<Quotation>();
-  displayedColumns: string[] = ["name", "period", "tax", "amount"];
+  displayedColumns: string[] = ["name", "period", "tax", "amount", "date"]; // Asegúrate de que "date" esté aquí
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -33,6 +33,7 @@ export class MyquotsComponent implements OnInit {
     const iduser = this.activatedRouter.snapshot.queryParamMap.get('iduser');
     this.id = Number(iduser);
     this.loadUser();
+    this.loadNumberFromStorage();
 
   }
 
@@ -100,6 +101,13 @@ export class MyquotsComponent implements OnInit {
         idprop: this.quotselect.idprop
       }
     }) 
+  }
+
+  loadNumberFromStorage(): void {
+    const number = localStorage.getItem('userNumber');
+    if (number) {
+      this.userSelectedDay = parseInt(number, 10);
+    }
   }
 
 }

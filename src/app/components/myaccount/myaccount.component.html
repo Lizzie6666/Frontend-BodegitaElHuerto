@@ -1,15 +1,19 @@
 <body>
     <div class="all">
         <div class="left">
-            <app-navbar [id] = "id" [mode] = "2"></app-navbar>
+            <app-navbar [id]="id" [mode]="2"></app-navbar>
         </div>
         <div class="right">
             <div class="title">Mi cuenta</div>
             <div class="datos">
-                <h4>Nombre: <span>{{usernow.name}}</span> </h4>
-                <h4>Apellidos: <span>{{usernow.lastname}}</span> </h4>
-                <h4>Email: <span>{{usernow.email}}</span> </h4>
-                <p>Password: <span> **** </span> </p>
+                <h4>Nombre: <span>{{usernow.name}}</span></h4>
+                <h4>Apellidos: <span>{{usernow.lastname}}</span></h4>
+                <h4>Email: <span>{{usernow.email}}</span></h4>
+                <p>Password: <span>****</span></p>
+                <div class="numero-input">
+                    <label for="inputNumber">Ingrese su día de Pago:</label>
+                    <input id="inputNumber" type="number" [(ngModel)]="fixedNumber" (change)="onNumberChange()">
+                </div>
 
             </div>
         </div>

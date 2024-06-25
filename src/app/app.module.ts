@@ -20,6 +20,7 @@ import { SelectpropertiesComponent } from './components/selectproperties/selectp
 import { PaymentsComponent } from './components/payments/payments.component';
 import { MyquotsComponent } from './components/myquots/myquots.component';
 import { MyaccountComponent } from './components/myaccount/myaccount.component';
+import { DebtComponent } from './components/debt/debt.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MyaccountComponent } from './components/myaccount/myaccount.component';
     SelectpropertiesComponent,
     PaymentsComponent,
     MyquotsComponent,
-    MyaccountComponent
+    MyaccountComponent,
+    DebtComponent
   ],
   imports: [
     BrowserModule,
