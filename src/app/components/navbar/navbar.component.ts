@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Client } from 'src/app/models/Client';
 import { ClientService } from 'src/app/services/client.service';
 
@@ -12,25 +12,32 @@ export class NavbarComponent implements OnInit {
 
   @Input() id?: number;
   @Input() mode?: number;
-  constructor(private clientservice: ClientService,
-              private route: Router) { }
+
+  usernow!: Client;
+
+  constructor(private clientservice: ClientService, private route: Router) { }
 
   ngOnInit(): void {
-    this.loadUser();
-    console.log(this.usernow.name);
+    // Intentar recuperar información del usuario desde localStorage
+    const usernowStr = localStorage.getItem('usernow');
+    if (usernowStr) {
+      this.usernow = JSON.parse(usernowStr);
+      console.log(this.usernow.name);
+    } else {
+      // Si no hay información en localStorage, cargar desde el servidor
+      this.loadUser();
+    }
   }
 
-  usernow!:Client;
-  loadUser()
-  {
-    if(this.id!= undefined && this.id!= 0)
-    {
+  loadUser() {
+    if (this.id !== undefined && this.id !== 0) {
       this.clientservice.getClientByID(this.id).subscribe(
-        (data:Client)=>{
+        (data: Client) => {
           this.usernow = data;
+          // Guardar información del usuario en localStorage
+          localStorage.setItem('usernow', JSON.stringify(this.usernow));
         }
       );
     }
   }
-
 }
