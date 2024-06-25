@@ -34,7 +34,7 @@ export class CotizationComponent implements OnInit {
     })
 
   }
-  
+
 
 
   gracias = ["Total", "Parcial"];
@@ -125,9 +125,9 @@ export class CotizationComponent implements OnInit {
         duration: 3000});
       console.log(this.exist);
     }
-    
 
-    
+
+
   }
 
   continue(){
@@ -167,7 +167,9 @@ export class CotizationComponent implements OnInit {
       final: false,
       gracia: 0,
       frecuency: '',
-      taxdeg: 0
+      taxdeg: 0,
+      startDate: new Date() // Inicializar con la fecha actual o la fecha que desees
+
     };
 
     this.configservice.addQuot(quotation).subscribe({

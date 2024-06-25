@@ -7,6 +7,7 @@
             <div class="title"> PLAN DE PAGOS </div>
             <section class="params">
                 <div class="div">
+                    <p>Concepto de Compra: <span class="concepto-compra">{{selectedPropertyName}}</span></p> <!-- Nueva linea -->
                     <p>Monto: {{myquot.amount}} dólares </p>
                     <p>Tasa: {{tasashow | number:'1.2-2'}}% </p>
                     <p>Tasa de seguro de desgravamen: {{tasaDegshow | number:'1.2-2'}}% </p>
@@ -55,6 +56,12 @@
                         <th mat-header-cell *matHeaderCellDef> Saldo </th>
                         <td mat-cell *matCellDef="let element"> {{element.saldo | number:'1.2-2'}} </td>
                     </ng-container>
+
+                    <ng-container matColumnDef="fecha">
+                      <th mat-header-cell *matHeaderCellDef> Fecha </th>
+                      <td mat-cell *matCellDef="let element"> {{element.fecha | date:'dd-MM-yyyy'}} </td>
+                  </ng-container>
+
 
                     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
