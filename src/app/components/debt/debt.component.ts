@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { Client } from 'src/app/models/Client';
+import { ClientService } from 'src/app/services/client.service';
 
 @Component({
   selector: 'app-debt',
@@ -7,9 +9,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./debt.component.css']
 })
 export class DebtComponent { 
-  constructor(private router: Router) { }
+  @Input() id?: number;
+  @Input() mode?: number;
+  constructor(private clientservice: ClientService,
+              private route: Router) { }
 
-  navigateTo(path: string): void {
-    this.router.navigate([path]);
+  ngOnInit(): void {
+    this.loadUser();
+    console.log(this.usernow.name);
   }
+
+  usernow!:Client;
+  loadUser()
+  {
+    if(this.id!= undefined && this.id!= 0)
+    {
+      this.clientservice.getClientByID(this.id).subscribe(
+        (data:Client)=>{
+          this.usernow = data;
+        }
+      );
+    }
+  }
+
+
+
 }
