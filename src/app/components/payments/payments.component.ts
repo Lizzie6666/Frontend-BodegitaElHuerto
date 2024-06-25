@@ -16,6 +16,10 @@ import { Capit } from 'src/app/models/Cap';
 import { of, config } from 'rxjs';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
+
+
+
+
 @Component({
   selector: 'app-payments',
   templateUrl: './payments.component.html',
@@ -38,6 +42,7 @@ export class PaymentsComponent implements OnInit {
     'amortizacion',
     'interes',
     'saldo',
+    'fecha'// Añadir la columna de fecha aquí
   ];
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -50,8 +55,11 @@ export class PaymentsComponent implements OnInit {
     private router: Router,
     private location: Location,
     private soporte: SoporteService,
-    private formbuilder: FormBuilder
+    private formbuilder: FormBuilder,
+
   ) { }
+
+  selectedPropertyName: string = ''; // Nueva variable
 
   ngOnInit(): void {
     const quot = this.route.snapshot.queryParamMap.get('idquot');
@@ -123,6 +131,10 @@ export class PaymentsComponent implements OnInit {
   inmonto!: number;
 
   paymenttable() {
+
+    let currentDate = new Date(); // Puedes ajustar esto según tu lógica de negocio para obtener la fecha de inicio adecuada
+    //let currentDate = new Date(this.myquot.startDate);
+
     this.tasa = this.myquot.tax / 100;
     this.tasaDeg = this.myquot.taxdeg / 100;
     this.tasashow = this.myquot.tax / 100;
@@ -139,7 +151,6 @@ export class PaymentsComponent implements OnInit {
       let n = this.npagos(this.configquot.capitalizacion);
       console.log(this.capn);
       this.tasa = Math.pow(1 + this.tasa / (360 / this.capn), n) - 1;
-
 
       //console.log('M: ' + 360 / this.capn);
       //console.log('N: ' + n);
@@ -163,15 +174,9 @@ export class PaymentsComponent implements OnInit {
     this.inmonto = this.myquot.amount * (1 - this.myquot.fee / 100);
     this.initialfee = this.myquot.amount * (this.myquot.fee / 100);
 
-    /*let cuota = (montototal * (this.tasa + tasa_seguro)) / (1 - Math.pow(1 + tasa_seguro + this.tasa, -plazo));
-    console.log(cuota);
-    let cuotasave = (montototal * (this.tasa + tasa_seguro)) / (1 - Math.pow(1 + tasa_seguro + this.tasa, -plazo));
-    console.log(cuota);
+    // Asegúrate de limpiar el array de pagos antes de agregar nuevos
+    this.pago = [];
 
-    if (this.myquot.gracia != undefined) {
-      cuota = (montototal * (this.tasa + tasa_seguro)) / (1 - Math.pow(1 + tasa_seguro + this.tasa, -(plazo - this.myquot.gracia)));
-      cuotasave = (montototal * (this.tasa + tasa_seguro)) / (1 - Math.pow(1 + tasa_seguro + this.tasa, -(plazo - this.myquot.gracia)));
-    }*/
 
     //Cálculo de pagos
     for (let i = 1; i <= plazo; i++) {
@@ -220,10 +225,36 @@ export class PaymentsComponent implements OnInit {
         amortizacion: amortizacion,
         interes: intereses,
         monto_seguro: montoSeg,
+        fecha: new Date(currentDate) // Asigna la fecha actual al nuevo pago
+
       };
       this.pago.push(nuevo_pago);
       saldopagar -= amortizacion;
-    }
+
+      // Incrementa la fecha para el próximo pago
+      /*switch (this.myquot.frecuency) {
+      case 'Mensual':
+        currentDate.setMonth(currentDate.getMonth() + 1);
+        break;
+      case 'Bimestral':
+        currentDate.setMonth(currentDate.getMonth() + 2);
+        break;
+      case 'Trimestral':
+        currentDate.setMonth(currentDate.getMonth() + 3);
+        break;
+      case 'Cuatrimestral':
+        currentDate.setMonth(currentDate.getMonth() + 4);
+        break;
+      case 'Semestral':
+        currentDate.setMonth(currentDate.getMonth() + 6);
+        break;
+      case 'Anual':
+        currentDate.setFullYear(currentDate.getFullYear() + 1);
+        break;
+      default:
+        console.error('Frecuencia no reconocida');
+    }*/
+  }
 
     this.dataSource = new MatTableDataSource(this.pago);
     this.arr_pagos = this.pago;
@@ -273,6 +304,7 @@ export class PaymentsComponent implements OnInit {
     this.propservice.getpropertiesbyID(this.idprop).subscribe({
       next: (data) => {
         this.property = data;
+        this.selectedPropertyName = data.name; // Asignar el nombre de la propiedad
       },
     });
   }

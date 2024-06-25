@@ -93,3 +93,13 @@ button {
     color: #ffffff;
     margin-left: 10px;
 }
+.concepto-compra {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid #a3c71c;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #f3f8e3;
+  color: #333;
+}
