@@ -7,4 +7,5 @@ export interface Client{
     phone: string;
     dni: string;
     address: string;
+    date:number;
 }
