@@ -912,6 +912,14 @@
       "capitalizacion": "",
       "periodgracia": "Parcial",
       "moneda": "dolares"
+    },
+    {
+      "id": 0,
+      "idclient": "1",
+      "tasa": "nominal",
+      "capitalizacion": "Bimestral",
+      "periodgracia": "Parcial",
+      "moneda": "soles"
     }
   ],
   "quotations": [
@@ -989,6 +997,21 @@
       "gracia": "2",
       "frecuency": "Semestral",
       "taxdeg": "0.5407"
+    },
+    {
+      "id": 0,
+      "idclient": "1",
+      "idconfigquot": 0,
+      "amount": 0,
+      "idprop": 0,
+      "period": 0,
+      "tax": 0,
+      "fee": 0,
+      "initial": false,
+      "final": false,
+      "gracia": 0,
+      "frecuency": "",
+      "taxdeg": 0
     }
   ]
 }
