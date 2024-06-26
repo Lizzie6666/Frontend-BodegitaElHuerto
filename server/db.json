@@ -107,181 +107,181 @@
   "properties": [
     {
       "id": "1",
-      "name": "Polo",
+      "name": "Estanterías",
       "district": "Sur",
       "address": "Polo Sur",
-      "size": "320 m2",
+      "size": "13.250",
       "rooms": 4,
       "pricedollar": 53000
     },
     {
       "id": "2",
-      "name": "Los pinos",
+      "name": "Vitrinas refrigeradas",
       "district": "Sur",
       "address": "Primavera av.",
-      "size": "450 m2",
+      "size": "20000",
       "rooms": 5,
       "pricedollar": 100000
     },
     {
       "id": "3",
-      "name": "Los pinos",
+      "name": "Refrigeradores y congeladores",
       "district": "Surco",
       "address": "Primavera av.",
-      "size": "450 m2",
+      "size": "20000",
       "rooms": 5,
       "pricedollar": 100000
     },
     {
       "id": "4",
-      "name": "Miraflores",
+      "name": "Cajas registradoras",
       "district": "Miraflores",
       "address": "Malecón",
-      "size": "250 m2",
+      "size": "26.750",
       "rooms": 3,
       "pricedollar": 80000
     },
     {
       "id": "5",
-      "name": "San Isidro",
+      "name": "Cámaras de seguridad",
       "district": "San Isidro",
       "address": "Avenida Principal",
-      "size": "400 m2",
+      "size": "30000",
       "rooms": 4,
       "pricedollar": 120000
     },
     {
       "id": "6",
-      "name": "La Molina",
+      "name": "Iluminación",
       "district": "La Molina",
       "address": "Calle Los Álamos",
-      "size": "300 m2",
+      "size": "23750",
       "rooms": 4,
       "pricedollar": 95000
     },
     {
       "id": "7",
-      "name": "Santa Anita",
+      "name": "Paneles de publicidad",
       "district": "Santa Anita",
       "address": "Calle Los Pinos",
-      "size": "350 m2",
+      "size": "21750",
       "rooms": 3,
       "pricedollar": 65000
     },
     {
       "id": "8",
-      "name": "Barranco",
+      "name": "Equipos de limpieza",
       "district": "Barranco",
       "address": "Calle de los Artistas",
-      "size": "280 m2",
+      "size": "30000",
       "rooms": 3,
       "pricedollar": 90000
     },
     {
       "id": "9",
-      "name": "Chorrillos",
+      "name": "Arroz y cereales",
       "district": "Chorrillos",
       "address": "Calle Los Pescadores",
-      "size": "320 m2",
+      "size": "18750",
       "rooms": 4,
       "pricedollar": 75000
     },
     {
       "id": "10",
-      "name": "Surco",
+      "name": "Azúcar",
       "district": "Surco",
       "address": "Avenida Principal",
-      "size": "380 m2",
+      "size": "22000",
       "rooms": 5,
       "pricedollar": 110000
     },
     {
       "id": "11",
-      "name": "Jesús María",
+      "name": "Pasta y fideos",
       "district": "Jesús María",
       "address": "Calle Los Ángeles",
-      "size": "280 m2",
+      "size": "28000",
       "rooms": 3,
       "pricedollar": 85000
     },
     {
       "id": "12",
-      "name": "San Borja",
+      "name": "Conservas y enlatados",
       "district": "San Borja",
       "address": "Calle Las Flores",
-      "size": "300 m2",
+      "size": "22500",
       "rooms": 4,
       "pricedollar": 90000
     },
     {
       "id": "13",
-      "name": "Magdalena",
+      "name": "Snacks",
       "district": "Magdalena",
       "address": "Calle Los Pájaros",
-      "size": "340 m2",
+      "size": "19500",
       "rooms": 4,
       "pricedollar": 78000
     },
     {
       "id": "14",
-      "name": "Callao",
+      "name": "Bebidas",
       "district": "Callao",
       "address": "Malecón",
-      "size": "280 m2",
+      "size": "23000",
       "rooms": 3,
       "pricedollar": 70000
     },
     {
       "id": "15",
-      "name": "La Victoria",
+      "name": "Productos lácteos",
       "district": "La Victoria",
       "address": "Avenida Principal",
-      "size": "380 m2",
+      "size": "20000",
       "rooms": 4,
       "pricedollar": 80000
     },
     {
       "id": "16",
-      "name": "Cercado de Lima",
+      "name": "Papel higiénico",
       "district": "Cercado de Lima",
       "address": "Calle Principal",
-      "size": "250 m2",
+      "size": "20000",
       "rooms": 3,
       "pricedollar": 60000
     },
     {
       "id": "17",
-      "name": "San Juan de Miraflores",
+      "name": "Frutas y verduras",
       "district": "San Juan de Miraflores",
       "address": "Calle Los Girasoles",
-      "size": "320 m2",
+      "size": "18000",
       "rooms": 4,
       "pricedollar": 72000
     },
     {
       "id": "18",
-      "name": "Breña",
+      "name": "Carnes y embutidos",
       "district": "Breña",
       "address": "Avenida Principal",
-      "size": "300 m2",
+      "size": "21250",
       "rooms": 4,
       "pricedollar": 85000
     },
     {
       "id": "19",
-      "name": "Surquillo",
+      "name": "Pescados y mariscos",
       "district": "Surquillo",
       "address": "Calle Los Cerezos",
-      "size": "280 m2",
+      "size": "26000",
       "rooms": 3,
       "pricedollar": 78000
     },
     {
       "id": "20",
-      "name": "Villa El Salvador",
+      "name": "Pilas y baterías",
       "district": "Villa El Salvador",
       "address": "Avenida Principal",
-      "size": "380 m2",
+      "size": "18000",
       "rooms": 5,
       "pricedollar": 90000
     }
@@ -920,6 +920,22 @@
       "capitalizacion": "Bimestral",
       "periodgracia": "Parcial",
       "moneda": "soles"
+    },
+    {
+      "id": 0,
+      "idclient": "1",
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Parcial",
+      "moneda": "soles"
+    },
+    {
+      "id": 0,
+      "idclient": "1",
+      "tasa": "nominal",
+      "capitalizacion": "Mensual",
+      "periodgracia": "Parcial",
+      "moneda": "dolares"
     }
   ],
   "quotations": [
@@ -1012,6 +1028,38 @@
       "gracia": 0,
       "frecuency": "",
       "taxdeg": 0
+    },
+    {
+      "id": 0,
+      "idclient": "1",
+      "idconfigquot": 0,
+      "amount": 0,
+      "idprop": 0,
+      "period": 0,
+      "tax": 0,
+      "fee": 0,
+      "initial": false,
+      "final": false,
+      "gracia": 0,
+      "frecuency": "",
+      "taxdeg": 0,
+      "startDate": "2024-06-26T03:20:19.899Z"
+    },
+    {
+      "id": 0,
+      "idclient": "1",
+      "idconfigquot": 0,
+      "amount": 0,
+      "idprop": 0,
+      "period": 0,
+      "tax": 0,
+      "fee": 0,
+      "initial": false,
+      "final": false,
+      "gracia": 0,
+      "frecuency": "",
+      "taxdeg": 0,
+      "startDate": "2024-06-26T03:31:22.054Z"
     }
   ]
 }
