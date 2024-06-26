@@ -12,4 +12,6 @@ export interface Quotation{
     fee: number;
     initial: boolean;
     final: boolean;
+    startDate: Date; // Agregar esta línea
+
 }

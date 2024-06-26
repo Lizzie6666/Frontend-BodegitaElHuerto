@@ -1,0 +1,83 @@
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #6BBE44; /* Color verde */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.debt-container {
+    background-color: #ff0000; /* Color rojo */
+}
+
+.welcome-section {
+    margin-bottom: 20px;
+}
+
+.welcome-image {
+    width: 50%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.welcome h1 {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.message {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.message h2 {
+    color: #6BBE44;
+    font-size: 24px;
+    margin: 0;
+}
+
+.debt-container .message h2, .debt-container .message p {
+    color: #ff0000; /* Color rojo */
+}
+
+.message p {
+    color: #6BBE44;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions button {
+    background-color: #ffffff;
+    color: #255000;
+    margin: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;   
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #e0e0e0;
+}

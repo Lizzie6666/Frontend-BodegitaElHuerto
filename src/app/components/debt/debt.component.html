@@ -1,0 +1,28 @@
+<div *ngIf="usernow; else loading">
+  <div class="container" [ngStyle]="{'background-color': usernow.id % 2 === 0 ? '#ff0000' : '#6BBE44'}">
+      <div class="welcome-section">
+          <img src="assets/images/LogoBodeguitaElHuerto.png" alt="Logo de la página" class="welcome-image">
+      </div>
+      <div class="welcome">
+          <h1>Bienvenido, {{ usernow.name }}</h1>
+      </div>
+      <div class="message" *ngIf="usernow.id % 2 === 1; else debtMessage">
+          <h2>No tienes deudas</h2>
+          <p>Gracias por tu responsabilidad</p>
+      </div>
+      <ng-template #debtMessage>
+          <h2>Tienes deudas</h2>
+          <p>Por favor, regulariza tus pagos.</p>
+      </ng-template>
+  </div>
+</div>
+<ng-template #loading>
+  <div class="container">
+      <div class="welcome-section">
+          <img src="assets/images/LogoBodeguitaElHuerto.png" alt="Logo de la página" class="welcome-image">
+      </div>
+      <div class="welcome">
+          <h1>Cargando...</h1>
+      </div>
+  </div>
+</ng-template>

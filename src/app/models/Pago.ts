@@ -6,4 +6,6 @@ export interface Payment{
     cuota: number;
     amortizacion: number;
     interes: number;
+    fecha: Date; // Nueva propiedad
+
 }

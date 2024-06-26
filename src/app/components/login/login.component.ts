@@ -32,27 +32,37 @@ export class LoginComponent implements OnInit {
     )
   }
 
-  loginUser()
-  {
-    let email: string; let password: string;
+  loginUser() {
+    let email: string;
+    let password: string;
     email = this.myForm.get("email")?.value;
     password = this.myForm.get("password")?.value;
-
+  
     this.clientservice.getClientAsAny().subscribe(
-      res=>{
-        const user = res.find((a:Client)=>{
+      res => {
+        const user = res.find((a: Client) => {
           return a.email == email && a.password == password;
         });
-        if(user){
-          this.snackbar.open("Ingresó correctamente.",'OK', {
-            duration: 3000});
+        if (user) {
+          this.snackbar.open("Ingresó correctamente.", 'OK', {
+            duration: 3000
+          });
+  
+          // Actualizar el valor en el localStorage
+          localStorage.setItem('usernow', JSON.stringify(user));
+  
           this.route.navigate(['/main'], {
-            queryParams: { iduser: user.id}});
-        }else{
-          this.snackbar.open("El correo o la contraseña son incorrectos",'OK', {
-            duration: 3000});
+            queryParams: {
+              iduser: user.id
+            }
+          });
+        } else {
+          this.snackbar.open("El correo o la contraseña son incorrectos", 'OK', {
+            duration: 3000
+          });
         }
-    });
+      });
   }
+  
 }
 
