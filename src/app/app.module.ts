@@ -1,3 +1,4 @@
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularMaterialModule } from './components/shared/angular-material/angular-material.module';
@@ -21,8 +22,6 @@ import { PaymentsComponent } from './components/payments/payments.component';
 import { MyquotsComponent } from './components/myquots/myquots.component';
 import { MyaccountComponent } from './components/myaccount/myaccount.component';
 import { DebtComponent } from './components/debt/debt.component';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { CommonModule, NgClass, NgFor } from '@angular/common';
 
 @NgModule({
   declarations: [

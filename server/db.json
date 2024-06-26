@@ -3,74 +3,42 @@
     {
       "dias": 1,
       "cap": "Diario",
-<<<<<<< HEAD
-      "id": "19db"
-=======
       "id": "7f8c"
->>>>>>> 2f6fdd7de3fc5ca0827b78211fc9fa98dbddf67d
     },
     {
       "dias": 15,
       "cap": "Quincenal",
-<<<<<<< HEAD
-      "id": "19c6"
-=======
       "id": "5fa0"
->>>>>>> 2f6fdd7de3fc5ca0827b78211fc9fa98dbddf67d
     },
     {
       "dias": 30,
       "cap": "Mensual",
-<<<<<<< HEAD
-      "id": "a309"
-=======
       "id": "d697"
->>>>>>> 2f6fdd7de3fc5ca0827b78211fc9fa98dbddf67d
     },
     {
       "dias": 60,
       "cap": "Bimestral",
-<<<<<<< HEAD
-      "id": "71a5"
-=======
       "id": "1f22"
->>>>>>> 2f6fdd7de3fc5ca0827b78211fc9fa98dbddf67d
     },
     {
       "dias": 90,
       "cap": "Trimestral",
-<<<<<<< HEAD
-      "id": "d921"
-=======
       "id": "fa86"
->>>>>>> 2f6fdd7de3fc5ca0827b78211fc9fa98dbddf67d
     },
     {
       "dias": 120,
       "cap": "Cuatrimestral",
-<<<<<<< HEAD
-      "id": "3f20"
-=======
       "id": "df4e"
->>>>>>> 2f6fdd7de3fc5ca0827b78211fc9fa98dbddf67d
     },
     {
       "dias": 180,
       "cap": "Semestral",
-<<<<<<< HEAD
-      "id": "a108"
-=======
       "id": "15d1"
->>>>>>> 2f6fdd7de3fc5ca0827b78211fc9fa98dbddf67d
     },
     {
       "dias": 360,
       "cap": "Anual",
-<<<<<<< HEAD
-      "id": "4fc9"
-=======
       "id": "cd9c"
->>>>>>> 2f6fdd7de3fc5ca0827b78211fc9fa98dbddf67d
     }
   ],
   "clients": [
